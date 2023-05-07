@@ -1,9 +1,9 @@
 #include "fruit.h"
 #include "store.h"
-float fruit::show() { // ¹°Ç°ÀÇ ÃÖ´ë ¸ÅÃâ
+float fruit::show() { // ë¬¼í’ˆì˜ ìµœëŒ€ ë§¤ì¶œ
 	return price * many;
 }
-float store::total() { // °¡°ÔÀÇ ÃÖ´ë ¸ÅÃâ
+float store::total() { // ê°€ê²Œì˜ ìµœëŒ€ ë§¤ì¶œ
 	float x = apple.show();
 	x += pear.show();
 	x += peach.show();
