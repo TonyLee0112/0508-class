@@ -1,9 +1,9 @@
 #include "fruit.h"
 #include "store.h"
-float fruit::show() { // ¹°Ç°ÀÇ ÃÖ´ë ¸ÅÃâ
+float fruit::show() { // ë¬¼í’ˆì˜ ìµœëŒ€ ë§¤ì¶œ
 	return price * many;
 }
-float store::total() { // °¡°ÔÀÇ ÃÖ´ë ¸ÅÃâ
+float store::total() { // ê°€ê²Œì˜ ìµœëŒ€ ë§¤ì¶œ
 	float x = apple.show();
 	x += pear.show();
 	x += peach.show();
@@ -17,7 +17,7 @@ store store::operator+(store& b) {
 	c.apple.many = apple.many + b.apple.many;
 	c.pear.many = pear.many + b.pear.many;
 	c.peach.many = peach.many + b.peach.many;
-	if (apple.price < b.apple.price) c.apple.price = apple.price; // A¿Í BÀÇ »ç°ú °¡°İ Áß ´õ ÀÛÀº °Í
+	if (apple.price < b.apple.price) c.apple.price = apple.price; // Aì™€ Bì˜ ì‚¬ê³¼ ê°€ê²© ì¤‘ ë” ì‘ì€ ê²ƒ
 	else c.apple.price = b.apple.price;
 	if (pear.price < b.pear.price) c.pear.price = pear.price;
 	else c.pear.price = b.pear.price;
