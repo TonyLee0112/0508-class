@@ -27,12 +27,10 @@ store store::operator+(store& b) {
 
 }
 
-store store::operator*=(int k) {
-	store c;
-	c.apple.many = k * apple.many;
-	c.pear.many = k * pear.many;
-	c.peach.many = k * peach.many;
-	c.mango.many = k * mango.many;
+void store::operator*=(int k) {
+	apple.many = k * apple.many;
+	pear.many = k * pear.many;
+	peach.many = k * peach.many;
+	mango.many = k * mango.many;
 
-	return c;
 }
