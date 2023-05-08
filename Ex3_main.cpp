@@ -12,8 +12,7 @@ int main() {
 	cout << C.total() << endl;
 
 	A *= 2;
-	cout << A.apple.many << endl;
-	cout << "Total of A is " << A.total() << endl;
+	cout << "A.total =  " << A.total() << endl;
 	
 	return 666;
 }
