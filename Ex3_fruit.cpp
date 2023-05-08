@@ -26,3 +26,14 @@ store store::operator+(store& b) {
 	return c;
 
 }
+
+store store::operator*=(int k) {
+	store c;
+	c.apple.many = k * apple.many;
+	cout << c.apple.price << endl;
+	c.pear.many = k * pear.many;
+	c.peach.many = k * peach.many;
+	c.mango.many = k * mango.many;
+
+	return c;
+}
