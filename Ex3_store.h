@@ -12,5 +12,5 @@ public:
 	fruit apple, pear, peach, mango;
 	float total();
 	store operator+(store&);
-	store operator*=(int k);
+	void operator*=(int k);
 };
